@@ -1,0 +1,5 @@
+name: replay
+train_mb_size: 256
+test_mb_size: 256
+# parameters are not tuned!
+replay_mem_size: 5000

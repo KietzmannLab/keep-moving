@@ -1,0 +1,26 @@
+program: train_models.py
+method: grid
+metric:
+    goal: maximize
+    name: Top1_Acc_Exp/eval_phase/test_stream/Task000/Exp000
+
+parameters:
+    experiment.algorithm.gem_memory_strength:
+      values: [0., 0.25, 0.5, 0.75, 1.]
+
+    experiment.algorithm.gem_patterns_per_experience:
+      values: [1000, 2000]
+
+    experiment.use_manager:
+      values: [True]
+
+    environment.seed:
+      values: [42]
+
+command:
+  - ${env}
+  - python
+  - ${program}
+  - ${args_no_hyphens}
+  - experiment=tinyimagenet_gem
+  - experiment.project=tinyimagenet_gem

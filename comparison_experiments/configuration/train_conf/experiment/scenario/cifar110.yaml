@@ -1,0 +1,10 @@
+name: cifar110
+pretrain_episodes: 60
+episodes: 60
+seed: ???
+fixed_class_order: ''
+n_experiences: 11
+has_pretraining: True
+return_task_id: True
+augment: False
+data_root: ???

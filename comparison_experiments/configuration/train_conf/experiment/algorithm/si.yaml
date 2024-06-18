@@ -1,0 +1,7 @@
+name: si
+train_mb_size: 256
+test_mb_size: 256
+# parameters are not tuned!
+si_eps: 0.09995125185235876
+si_lambda: 98.27404768039204
+

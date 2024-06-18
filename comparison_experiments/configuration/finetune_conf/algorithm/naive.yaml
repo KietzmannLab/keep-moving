@@ -1,0 +1,4 @@
+name: naive
+train_mb_size: 2048
+test_mb_size: 2048
+patience: 10

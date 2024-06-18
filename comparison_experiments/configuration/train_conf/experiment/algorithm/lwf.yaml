@@ -1,0 +1,6 @@
+name: lwf
+train_mb_size: 256
+test_mb_size: 256
+# parameters are not tuned!
+lwf_alpha: 24.68795740639468
+lwf_temperature: 3.438581749702907

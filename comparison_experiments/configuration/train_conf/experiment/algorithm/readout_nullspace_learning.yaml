@@ -1,0 +1,3 @@
+name: readout_nullspace_learning
+train_mb_size: 256
+test_mb_size: 256

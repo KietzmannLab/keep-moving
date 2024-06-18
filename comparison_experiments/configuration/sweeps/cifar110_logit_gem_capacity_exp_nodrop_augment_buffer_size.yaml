@@ -1,0 +1,33 @@
+program: train_models.py
+method: grid
+metric:
+    goal: maximize
+    name: Top1_Acc_Exp/eval_phase/test_stream/Task000/Exp000
+
+parameters:
+    experiment.algorithm.gem_memory_strength:
+      values: [0.]
+
+    experiment.algorithm.gem_patterns_per_experience:
+      values: [10, 100, 1000, 5000, 10000]
+
+    experiment.optimizer.l1:
+      values: [0.]
+
+    experiment.model.dense_size:
+      values: [128]
+
+    experiment.use_manager:
+      values: [True]
+
+    environment.seed:
+      values: [42]
+
+command:
+  - ${env}
+  - python
+  - ${program}
+  - ${args_no_hyphens}
+  - experiment=cifar110_experiment_logit_gem_nodrop
+  - experiment.scenario.augment=True
+  - experiment.project=logit_gem_sweep_buffersize

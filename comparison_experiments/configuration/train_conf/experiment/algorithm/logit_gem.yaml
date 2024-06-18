@@ -1,0 +1,6 @@
+name: logit_gem
+train_mb_size: 256
+test_mb_size: 256
+
+gem_memory_strength: 0.
+gem_patterns_per_experience: 5000

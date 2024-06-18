@@ -1,0 +1,23 @@
+program: train_models.py
+
+method: bayes
+
+metric:
+    goal: maximize
+    name: Top1_Acc_Exp/eval_phase/test_stream/Task000/Exp000
+
+parameters:
+  experiment.algorithm.gem_memory_strength:
+    min: .1
+    max: 1.
+
+  experiment.algorithm.gem_patterns_per_experience:
+    min: 100
+    max: 2000
+
+command:
+  - ${env}
+  - python
+  - ${program}
+  - ${args_no_hyphens}
+  - experiment=cifar110_experiment_gem

@@ -1,0 +1,15 @@
+defaults:
+  - algorithm: ewc
+  - scenario: tinyimagenet 
+  - model: slimresnet
+  - optimizer: adam
+  - initializer: kaiming
+  - param_manager: step_up
+project: ewc_plasticity_tinyimagenet 
+name: ewc
+exit_early_after: -1
+description: ''
+freeze_experiment: False
+freeze_experience: ''
+freeze_layers: ''
+use_manager: True

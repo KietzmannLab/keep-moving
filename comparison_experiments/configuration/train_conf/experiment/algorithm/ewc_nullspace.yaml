@@ -1,0 +1,11 @@
+name: ewc_nullspace
+ewc_lambda: 100000.
+nullspace_lambda: 1.
+nullspace_layer: ???
+nullspace_rcond: 1e-8
+num_workers: 0
+replay_mem_size: 1000
+replay_batch_size: 256
+train_mb_size: 256
+test_mb_size: 256
+

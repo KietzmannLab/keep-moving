@@ -1,0 +1,17 @@
+defaults:
+  - algorithm: ewc_nullspace 
+  - scenario: splitcifar10 
+  - model: simplecnn 
+  - optimizer: adam
+  - initializer: kaiming
+  - param_manager: step_up
+project: splitcifar10_test
+name: cifar10_baseline
+exit_early_after: -1
+description: ''
+
+freeze_experiment: False
+freeze_experience: ''
+freeze_layers: ''
+
+use_manager: True

@@ -1,0 +1,5 @@
+logdir: logs
+seed: 42
+cuda: 0
+batchsize: 2048
+timestamp: ???

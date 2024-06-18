@@ -1,0 +1,9 @@
+name: activity_replay
+
+train_mb_size: 256
+test_mb_size: 256
+
+replay_mem_size: 10000
+replay_batch_size: 256
+exclude_list: ??? # layers to exclude from activity replay. This depends on the model and must be specified at runtime
+replay_activity_lambda: 100.

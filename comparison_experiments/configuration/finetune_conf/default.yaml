@@ -1,0 +1,8 @@
+defaults:
+  - environment: default
+  - scenario: cifar110
+  - optimizer: adam
+  - algorithm: naive
+run_name: ???
+project: ???
+description: ''

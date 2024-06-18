@@ -1,0 +1,5 @@
+name: ewc
+train_mb_size: 256
+test_mb_size: 256
+# parameters are tuned for cifar110
+ewc_lambda: 1.

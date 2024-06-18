@@ -1,0 +1,10 @@
+sbatch submit_train.sh project=ewc subspace_epochs=0 ewc_lambda=0.001 seed=44
+sbatch submit_train.sh project=ewc subspace_epochs=0 ewc_lambda=0.01 seed=44
+sbatch submit_train.sh project=ewc subspace_epochs=0 ewc_lambda=0.1 seed=44
+sbatch submit_train.sh project=ewc subspace_epochs=0 ewc_lambda=1. seed=44
+sbatch submit_train.sh project=ewc subspace_epochs=0 ewc_lambda=10. seed=44
+sbatch submit_train.sh project=ewc subspace_epochs=0 ewc_lambda=100. seed=44
+sbatch submit_train.sh project=ewc subspace_epochs=0 ewc_lambda=1000. seed=44
+sbatch submit_train.sh project=ewc subspace_epochs=0 ewc_lambda=10000. seed=44
+sbatch submit_train.sh project=ewc subspace_epochs=0 ewc_lambda=100000. seed=44
+sbatch submit_train.sh project=ewc subspace_epochs=0 ewc_lambda=1000000. seed=44

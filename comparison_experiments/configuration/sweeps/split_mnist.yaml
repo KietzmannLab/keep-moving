@@ -1,0 +1,19 @@
+program: train_models.py
+method: bayes
+metric:
+    goal: maximize
+    name: Top1_Acc_Exp/eval_phase/test_stream/Task000/Exp000
+
+parameters:
+  experiment.algorithm.si_eps:
+    values: [1e-5, 1e-4, 1e-3, 1e-2, 1e-1]
+
+  experiment.algorithm.si_lambda:
+    values: [0.1, 1. , 10.]
+
+command:
+  - ${env}
+  - python
+  - ${program}
+  - ${args_no_hyphens}
+  - experiment=split_mnist_experiment_si

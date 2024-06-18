@@ -1,0 +1,9 @@
+defaults:
+ - environment: default
+ - scenario: cifar110
+project: ???
+run_name: ???
+embedding_layer: ???
+analysis_task: 0
+rdm_first_order_method: euclidean
+rdm_second_order_method: cosine

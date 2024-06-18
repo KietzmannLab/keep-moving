@@ -1,0 +1,30 @@
+program: train_models.py
+method: grid
+metric:
+    goal: maximize
+    name: Top1_Acc_Exp/eval_phase/test_stream/Task000/Exp000
+
+parameters:
+
+    experiment.algorithm.lwf_alpha:
+        values: [0.1, 1., 10., 100., 1000.]
+
+    experiment.algorithm.lwf_temperature:
+        values: [1., 5., 10.]
+
+    experiment.optimizer.l1:
+      values: [0.]
+
+    experiment.model.dense_size:
+      values: [64, 128, 256, 512, 1024]
+
+    experiment.use_manager:
+      values: [True, False]
+
+command:
+  - ${env}
+  - python
+  - ${program}
+  - ${args_no_hyphens}
+  - experiment=cifar110_experiment_lwf
+  - environment.seed=42

@@ -1,0 +1,13 @@
+defaults:
+  - algorithm: gem
+  - scenario: ecoset_pretrain
+  - model: vgg_three_model_1024_eco
+  - optimizer: adam
+  - initializer: kaiming
+project: continual_ecoset
+exit_early_after: -1
+name: ecoset_continual_1024_three_block_vgg_gem
+description: ''
+freeze_experiment: False
+freeze_experience: ''
+freeze_layers: ''

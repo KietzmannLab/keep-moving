@@ -1,0 +1,35 @@
+program: train_models.py
+method: grid
+metric:
+    goal: maximize
+    name: Top1_Acc_Exp/eval_phase/test_stream/Task000/Exp000
+
+parameters:
+
+    experiment.algorithm.lwf_alpha:
+        values: [0.05, 0.1, 0.2]
+
+    experiment.algorithm.lwf_temperature:
+        values: [1., 2.]
+
+    experiment.optimizer.l1:
+      values: [0.]
+
+    experiment.model.dense_size:
+      values: [128]
+
+    experiment.use_manager:
+      values: [True]
+
+    environment.seed:
+      values: [42,43,44]
+
+command:
+  - ${env}
+  - python
+  - ${program}
+  - ${args_no_hyphens}
+  - experiment=cifar110_experiment_lwf_nodrop
+  - experiment.scenario.augment=True
+  - experiment.param_manager.freeze_previous_readouts=True
+  - experiment.project=lwf_plasticity_cifar110_frozen_readouts

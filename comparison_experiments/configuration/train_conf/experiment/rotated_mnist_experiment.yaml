@@ -1,0 +1,12 @@
+defaults:
+  - algorithm: naive
+  - scenario: rotated_mnist
+  - model: mnist_mlp
+  - optimizer: adam
+  - initializer: kaiming
+project: experiment_rotated_mnist
+name: adam
+description: ''
+freeze_experiment: False
+freeze_experience: ''
+freeze_layers: ''

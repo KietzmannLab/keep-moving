@@ -1,0 +1,9 @@
+name: logit_replay
+
+train_mb_size: 256
+test_mb_size: 256
+
+replay_mem_size: 1000
+replay_lambda: 1.
+auxiliary_loss: 'mse_logits'
+replay_batch_size: 256

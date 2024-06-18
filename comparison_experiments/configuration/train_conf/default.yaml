@@ -1,0 +1,3 @@
+defaults:
+  - environment: klab
+  - experiment: main_experiment

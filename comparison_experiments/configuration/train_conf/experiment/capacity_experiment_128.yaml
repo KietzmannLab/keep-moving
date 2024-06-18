@@ -1,0 +1,12 @@
+defaults:
+  - algorithm: naive
+  - scenario: cifar110
+  - model: si_model_128
+  - optimizer: adam
+  - initializer: kaiming
+project: experiment_capacity
+name: si_model_128
+description: ''
+freeze_experiment: False
+freeze_experience: ''
+freeze_layers: ''

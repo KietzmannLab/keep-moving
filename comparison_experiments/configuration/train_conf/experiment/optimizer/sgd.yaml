@@ -1,0 +1,7 @@
+name: sgd
+lr: 0.01
+momentum: 0.
+nesterov: False
+early_stopping: True
+patience: 10
+margin: 0.001

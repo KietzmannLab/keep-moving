@@ -1,0 +1,10 @@
+name: clamp_nullspace_replay 
+nullspace_lambda: 1.
+nullspace_rcond: 1e-8
+nullspace_layer: ???
+replay_mem_size: 1000
+replay_batch_size: 256
+scaled: False
+control: False
+train_mb_size: 256
+test_mb_size: 256

@@ -1,0 +1,8 @@
+name: splitcifar10
+episodes: 60
+seed: ???
+fixed_class_order: ''
+n_experiences: 2
+has_pretraining: False
+return_task_id: True
+data_root: ???

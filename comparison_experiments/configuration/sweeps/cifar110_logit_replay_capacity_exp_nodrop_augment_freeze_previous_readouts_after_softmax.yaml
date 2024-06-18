@@ -1,0 +1,35 @@
+program: train_models.py
+method: grid
+metric:
+    goal: maximize
+    name: Top1_Acc_Exp/eval_phase/test_stream/Task000/Exp000
+
+parameters:
+    experiment.algorithm.replay_mem_size:
+        values: [1000, 10000, 15000]
+
+    experiment.algorithm.replay_lambda:
+        values: [1.]
+
+    experiment.optimizer.l1:
+      values: [0.]
+
+    experiment.model.dense_size:
+      values: [128]
+
+    experiment.use_manager:
+      values: [True]
+
+    environment.seed:
+      values: [42,43,44]
+
+command:
+  - ${env}
+  - python
+  - ${program}
+  - ${args_no_hyphens}
+  - experiment=cifar110_experiment_logit_replay_nodrop
+  - experiment.scenario.augment=True
+  - experiment.param_manager.freeze_previous_readouts=True
+  - experiment.algorithm.after_softmax=True
+  - experiment.project=logit_replay_softmax_plasticity_cifar110

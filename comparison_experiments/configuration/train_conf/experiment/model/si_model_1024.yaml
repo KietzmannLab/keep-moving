@@ -1,0 +1,5 @@
+name: variable_vgg
+block_sizes: [32, 64]
+dense_size: 1024
+dropouts: [.25, .25, .5]
+input_shape: [3,32,32]

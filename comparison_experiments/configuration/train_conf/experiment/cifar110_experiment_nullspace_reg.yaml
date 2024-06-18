@@ -1,0 +1,15 @@
+defaults:
+  - algorithm: nullspace_regularisation
+  - scenario: cifar110
+  - model: si_model
+  - optimizer: adam
+  - initializer: kaiming
+  - param_manager: step_up
+project: nullspace_reg_plasticity_cifar110
+name: si_model_nullspace_regularisation
+exit_early_after: -1
+description: ''
+freeze_experiment: False
+freeze_experience: ''
+freeze_layers: ''
+use_manager: False

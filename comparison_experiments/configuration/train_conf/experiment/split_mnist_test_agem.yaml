@@ -1,0 +1,13 @@
+defaults:
+  - algorithm: agem
+  - scenario: split_mnist
+  - model: mnist_mlp
+  - optimizer: adam
+  - initializer: kaiming
+project: experiment_split_mnist
+name: adam
+exit_early_after: -1
+description: ''
+freeze_experiment: False
+freeze_experience: ''
+freeze_layers: ''

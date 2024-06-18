@@ -1,0 +1,13 @@
+defaults:
+  - algorithm: agem
+  - scenario: ecoset_pretrain100
+  - model: vgg_three_model_1024_eco
+  - optimizer: adam
+  - initializer: kaiming
+project: plasticity_ecoset_pretrain_100
+exit_early_after: -1
+name: ecoset_pretrain_1024_three_block_vgg_agem
+description: ''
+freeze_experiment: False
+freeze_experience: ''
+freeze_layers: ''

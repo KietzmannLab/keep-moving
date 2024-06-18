@@ -1,0 +1,6 @@
+name: agem
+train_mb_size: 256
+test_mb_size: 256
+
+gem_patterns_per_experience: 5000
+gem_sample_size: 1024

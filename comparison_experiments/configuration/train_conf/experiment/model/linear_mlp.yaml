@@ -1,0 +1,4 @@
+name: linear_mlp
+input_size: 784
+hidden_size: 128
+n_hidden: 1

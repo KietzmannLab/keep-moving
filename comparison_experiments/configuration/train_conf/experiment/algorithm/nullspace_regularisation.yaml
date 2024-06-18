@@ -1,0 +1,12 @@
+name: nullspace_regularisation
+nullspace_lambda: 1e9
+nullspace_rcond: 1e-8
+nullspace_layer: ???
+scaled: True
+control: False
+reg_criterion: cosine
+no_bias: True
+
+train_mb_size: 256
+test_mb_size: 256
+

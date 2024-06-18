@@ -1,0 +1,9 @@
+name: rotated_mnist
+n_experiences: 4
+has_pretraining: False
+seed: ???
+episodes: 20
+rotations_list: [0, 33, 66, 90]
+return_task_id: True
+fixed_class_order: ''
+data_root: ???

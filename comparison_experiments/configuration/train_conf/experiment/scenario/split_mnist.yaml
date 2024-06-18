@@ -1,0 +1,9 @@
+name: split_mnist
+n_experiences: 5
+fixed_class_order: ''
+pretrain_episodes: -1
+has_pretraining: False
+seed: ???
+episodes: 10
+return_task_id: True
+data_root: ???

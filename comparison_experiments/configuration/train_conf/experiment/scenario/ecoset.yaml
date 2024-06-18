@@ -1,0 +1,9 @@
+name: ecoset
+classes_per_experience: [565]
+n_experiences: 1
+episodes: 200
+fixed_class_order: ???
+img_size: 64
+seed: ???
+data_root: ???
+has_pretraining: False

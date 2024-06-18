@@ -1,0 +1,6 @@
+sbatch submit_train.sh project=subspace_estimation_vary_recompute use_projected_gradients=true recompute_every_n_steps=25 knob_null=1.0 knob_range=0.
+sbatch submit_train.sh project=subspace_estimation_vary_recompute use_projected_gradients=true recompute_every_n_steps=50 knob_null=1.0 knob_range=0.
+sbatch submit_train.sh project=subspace_estimation_vary_recompute use_projected_gradients=true recompute_every_n_steps=100 knob_null=1.0 knob_range=0.
+sbatch submit_train.sh project=subspace_estimation_vary_recompute use_projected_gradients=true recompute_every_n_steps=400 knob_null=1.0 knob_range=0.
+sbatch submit_train.sh project=subspace_estimation_vary_recompute use_projected_gradients=true recompute_every_n_steps=1000 knob_null=1.0 knob_range=0.
+sbatch submit_train.sh project=subspace_estimation_vary_recompute use_projected_gradients=true recompute_every_n_steps=5000 knob_null=1.0 knob_range=0.

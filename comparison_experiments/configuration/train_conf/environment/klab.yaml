@@ -1,0 +1,13 @@
+logdir: logs
+seed: None
+cuda: 0
+n_workers: 8
+prefetch_factor: 4
+persistent_workers: False
+eval_every: 1
+save_every: -1  # how often to checkpoint (epoch frequency)
+checkpointing: False
+timestamp: ???
+wandb_id: ???
+resume_wandb: allow
+data_root: ./data

@@ -1,0 +1,2 @@
+lambda_filter,lambda_anti_filter,lambda_ewc,plasticity,stability,p1,p2,p1_null,p2_null,p1_range,p2_range,p1_embedding,p2_embedding,p1_embedding_null,p2_embedding_null,p1_embedding_range,p2_embedding_range
+0.53125,0.78125,0.0,0.7008845916478091,0.6158785755983655,0.37343198,0.92555803,0.13871077,0.45506006,0.3342263,0.85316896,3.2029498,1.2533007,1.6104974,0.5609068,2.9743037,1.1048533

@@ -1,0 +1,15 @@
+defaults:
+  - algorithm: lwf
+  - scenario: cifar110
+  - model: si_model_nodrop
+  - optimizer: adam
+  - initializer: kaiming
+  - param_manager: step_up
+project: lwf_plasticity_cifar110_nodrop
+name: si_model_lwf
+exit_early_after: -1
+description: ''
+freeze_experiment: False
+freeze_experience: ''
+freeze_layers: ''
+use_manager: True

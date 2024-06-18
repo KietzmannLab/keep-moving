@@ -1,0 +1,23 @@
+program: train_models.py
+
+method: bayes
+
+metric:
+    goal: maximize
+    name: Top1_Acc_Exp/eval_phase/test_stream/Task000/Exp000
+
+parameters:
+  experiment.algorithm.si_eps:
+    min: 0.00000001
+    max: 0.1
+
+  experiment.algorithm.si_lambda:
+    min: 0.1
+    max: 100.0
+
+command:
+  - ${env}
+  - python
+  - ${program}
+  - ${args_no_hyphens}
+  - experiment=cifar110_experiment_si

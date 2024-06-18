@@ -1,0 +1,12 @@
+defaults:
+  - algorithm: naive
+  - scenario: ecoset
+  - model: vgg_three_model_1024_eco
+  - optimizer: adam
+  - initializer: kaiming
+project: continual_ecoset
+name: ecoset_full_training_1024_three_block_vgg
+description: ''
+freeze_experiment: False
+freeze_experience: ''
+freeze_layers: ''
